@@ -3,7 +3,7 @@
  // main document ready function to check if dom is loaded fully or not
   $( document ).ready(function() {
      
-     var myFacebookToken = 'EAACEdEose0cBAGDwPyZAPA3OQN8Hks9ZBpHroXT7jdGHQjuZCXxVnyRQFSChVRE5ZAq63vJyWzZBLGVcAyIRrsUq5dAfLfN3VtwHZCxJ2rbTBkNdZBSTak2AZCHy70NrR8sZAucZAyND1VTlb75CbvHtdYJLfTL6x9m6QYysZAy4cs8eLv26ZBTEwUOZBLemRhrdhu1kZD';
+     var myFacebookToken = 'EAACEdEose0cBAI8T73CfbTxZAx3Vi090wZAY6SXOFsplazdn3LobRWloAZA2cNkbmlSZBsEU10oqakQQwg2TN10nPPw0ZCUqEd9hRZC0qrZA6gpWTzoYvM8jAYpuXPE9Gg35CmBibSt8E7G5EQIx8hjqNWdzhaGVgZAMFJ0hJTr48aR9gPPmWc0MTk0wEHUhDuMZD';
   $(".loader").hide();
 
          function getFacebookInfo(){
@@ -19,7 +19,7 @@
                   {
                     console.log(response);
                     console.log(typeof(response));
-                  
+                    $("#name").html("Hi, I am "+response.name);
                     $("#myEmail").html(response.email);
                     $("#aboutMe").html(response.bio);
                     $("#birthday").html(response.birthday);
